@@ -1,0 +1,25 @@
+{
+  "name": "@omnimodular/papertrail",
+  "version": "0.9.1",
+  "description": "Papertrail Node.js client",
+  "main": "papertrail.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omnimodular/nodejs-papertrail.git"
+  },
+  "author": "Omnimodular AB",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/omnimodular/nodejs-papertrail/issues"
+  },
+  "homepage": "https://github.com/omnimodular/nodejs-papertrail#readme",
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
