@@ -35,12 +35,9 @@ import os from "node:os"
 const papertrailToken = process.env.PAPERTRAIL_TOKEN
 const papertrailUrl = process.env.PAPERTRAIL_URL
 const httpsAgent = new https.Agent({ keepAlive: true })
-const hostname = os.hostname()
-const program = "app"
-const prival = 14    // 1 * 8 + 6 = informational; see Table 'Severity levels'.
 
-export default async function log(message, opts = { hostname, program, prival }) {
-    const { hostname, program, prival } = opts
+export default async function log(message, opts = {}) {
+    const { hostname = os.hostname(), program = "app", prival = 14 } = opts
     const msg = (typeof message === "string") ? message : JSON.stringify(message)
     const syslogMessage = `<${prival}>1 ${new Date().toISOString()} ${hostname} ${program} - - - ${msg}`
 
