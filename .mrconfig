@@ -1,0 +1,116 @@
+[serverless]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-serverless' 'serverless'
+
+[compose]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-compose' 'compose'
+
+[docker/azure-queue-sidecar]
+checkout = git clone 'https://github.com/omnimodular/azure-queue-sidecar' 'azure-queue-sidecar'
+
+[docker/swayer]
+checkout = git clone 'https://github.com/omnimodular/swayer' 'swayer'
+
+[k8s/frontend]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-k8s-frontend' 'frontend'
+
+[k8s/ingest]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-k8s-ingest' 'ingest'
+
+[k8s/monitor]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-k8s-monitor' 'monitor'
+
+[k8s/namespace]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-k8s-namespace' 'namespace'
+
+[labs]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-labs' 'labs'
+
+[k8s/dataset]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-k8s-dataset' 'dataset'
+
+[docker/deploy-monitor]
+checkout = git clone 'https://github.com/omnimodular/deploy-monitor' 'deploy-monitor'
+
+[k8s/dotkube]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-k8s-dotkube' 'dotkube'
+
+[docker/k8s-sss]
+checkout = git clone 'https://github.com/omnimodular/k8s-sss' 'k8s-sss'
+
+[events]
+checkout = git clone 'https://github.com/omnimodular/events' 'events'
+
+[k8s/deployment]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-k8s-deployment' 'deployment'
+
+[docker/k8s-healthz]
+checkout = git clone 'https://github.com/omnimodular/k8s-healthz' 'k8s-healthz'
+
+[docker/job-docker-executor]
+checkout = git clone 'https://github.com/omnimodular/job-docker-executor' 'job-docker-executor'
+
+[docker/azure-blob-sidecar]
+checkout = git clone 'https://github.com/omnimodular/azure-blob-sidecar' 'azure-blob-sidecar'
+
+[docker/azure-functionapp-sidecar]
+checkout = git clone 'https://github.com/omnimodular/azure-functionapp-sidecar' 'azure-functionapp-sidecar'
+
+[invoice/dataset]
+checkout = git clone 'https://github.com/omnimodular/invoice-dataset' 'dataset'
+
+[invoice/extract]
+checkout = git clone 'https://github.com/omnimodular/invoice-extract' 'extract'
+
+[invoice/haproxy]
+checkout = git clone 'https://github.com/omnimodular/invoice-haproxy' 'haproxy'
+
+[invoice/model-test]
+checkout = git clone 'https://github.com/omnimodular/invoice-model-test' 'model-test'
+
+[invoice/postprocess]
+checkout = git clone 'https://github.com/omnimodular/invoice-postprocess' 'postprocess'
+
+[invoice/preprocess]
+checkout = git clone 'https://github.com/omnimodular/invoice-preprocess' 'preprocess'
+
+[invoice/serving]
+checkout = git clone 'https://github.com/omnimodular/invoice-serving' 'serving'
+
+[invoice/tests]
+checkout = git clone 'https://github.com/omnimodular/invoice-tests' 'tests'
+
+[invoice/training]
+checkout = git clone 'https://github.com/omnimodular/invoice-training' 'training'
+
+[docker/azure-copy-blob]
+checkout = git clone 'https://github.com/omnimodular/azure-copy-blob' 'azure-copy-blob'
+
+[k8s/scaling]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-k8s-scaling' 'scaling'
+
+[invoice/accuracy]
+checkout = git clone 'https://github.com/omnimodular/invoice-accuracy' 'accuracy'
+
+[invoice/deploy]
+checkout = git clone 'https://github.com/omnimodular/invoice-deploy' 'deploy'
+
+[invoice/prune]
+checkout = git clone 'https://github.com/omnimodular/invoice-prune' 'prune'
+
+[k8s/accuracy]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-k8s-accuracy' 'accuracy'
+
+[k8s/model-test]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-k8s-model-test' 'model-test'
+
+[docker/log-sidecar]
+checkout = git clone 'https://github.com/omnimodular/log-sidecar' 'log-sidecar'
+
+[serverless-ctrl]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-serverless-ctrl' 'serverless-ctrl'
+
+[vendor]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-vendor' 'vendor'
+
+[test/ingest]
+checkout = git clone 'https://github.com/omnimodular/omnicoder-test-ingest' 'ingest'
