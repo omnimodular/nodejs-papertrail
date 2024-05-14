@@ -1,2 +1,9 @@
 */
 *.swp
+
+/.cache
+/.config
+/.docker
+/.local
+/.mozilla
+/Videos
