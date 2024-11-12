@@ -114,3 +114,6 @@ checkout = git clone 'https://github.com/omnimodular/omnicoder-vendor' 'vendor'
 
 [test/ingest]
 checkout = git clone 'https://github.com/omnimodular/omnicoder-test-ingest' 'ingest'
+
+[docker/hello-web]
+checkout = git clone 'https://github.com/omnimodular/hello-web' 'hello-web'
