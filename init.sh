@@ -47,11 +47,12 @@ azure-blob-sidecar
 azure-copy-blob
 azure-functionapp-sidecar
 azure-queue-sidecar
-swayer
 deploy-monitor
+hello-web
 job-docker-executor
 k8s-healthz
 k8s-sss
+swayer
 log-sidecar
 HERE
 
