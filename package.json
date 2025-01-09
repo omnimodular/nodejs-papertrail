@@ -1,6 +1,6 @@
 {
   "name": "@omnimodular/papertrail",
-  "version": "0.9.2",
+  "version": "0.10.0",
   "description": "Papertrail Node.js client",
   "main": "papertrail.mjs",
   "scripts": {
