@@ -29,39 +29,41 @@
  **/
 
 import fetch from "node-fetch"
-import https from "node:https"
-import os from "node:os"
+import https from "https"
+import os from "os"
 
-const papertrailToken = process.env.PAPERTRAIL_TOKEN
-const papertrailUrl = process.env.PAPERTRAIL_URL
-const httpsAgent = new https.Agent({ keepAlive: true })
+export default function createLogger(config = {}) {
+  const papertrailToken = config.token || process.env.PAPERTRAIL_TOKEN
+  const papertrailUrl = config.url || process.env.PAPERTRAIL_URL
+  const httpsAgent = new https.Agent({ keepAlive: true })
 
-export default async function log(message, opts = {}) {
+  return async function log(message, opts = {}) {
     const { hostname = os.hostname(), program = "app", prival = 14 } = opts
     const msg = (typeof message === "string") ? message : JSON.stringify(message)
     const syslogMessage = `<${prival}>1 ${new Date().toISOString()} ${hostname} ${program} - - - ${msg}`
 
     if (!papertrailToken || !papertrailUrl) {
-        console.log(syslogMessage)
-        return
+      console.log(syslogMessage)
+      return
     }
 
     try {
-        await fetch(
-            papertrailUrl,
-            {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/octet-stream',
-                    'Authorization': `Bearer ${papertrailToken}`,
-                },
-                body: Buffer.from(syslogMessage),
-                agent: httpsAgent,
-            }
-        )
+      await fetch(
+        papertrailUrl,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/octet-stream',
+            'Authorization': `Bearer ${papertrailToken}`,
+          },
+          body: Buffer.from(syslogMessage),
+          agent: httpsAgent,
+        }
+      )
     }
     catch (err) {
-        console.error(`Papertrail error: ${err.message}`)
-        console.error(err.stack)
+      console.error(`Papertrail error: ${err.message}`)
+      console.error(err.stack)
     }
+  }
 }
